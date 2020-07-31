@@ -1,0 +1,28 @@
+{
+  "name": "auth0-jwt-lambda",
+  "version": "0.1.0",
+  "description": "Quickly integrate Auth0 into your serverless lambda function.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lunar-Collective/auth0-jwt-lambda.git"
+  },
+  "keywords": [
+    "auth0",
+    "lambda",
+    "serverless"
+  ],
+  "author": "Stephen Miracle - Lunar Collective",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lunar-Collective/auth0-jwt-lambda/issues"
+  },
+  "homepage": "https://github.com/Lunar-Collective/auth0-jwt-lambda#readme",
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "jwks-rsa": "^1.8.1"
+  }
+}
