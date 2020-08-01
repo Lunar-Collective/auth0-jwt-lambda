@@ -8,17 +8,17 @@ The current instructions for integrating Auth0 depend on the usage of an express
 ## How to use
 This is a pretty straightforward package to use. It contains a single function with 2 required parameters -- token and the domain. There are several optional parameters that you can also pass to give more control for auth0.
 
-** Example **
+**Example**
 
 ``
- const authVerify = require('auth0-jwt-lambda');
+    const authVerify = require('auth0-jwt-lambda');
+
+    const verifiedPromise = authVerify(request.headers.authorization.replace("Bearer ", ""), env.process.AUTH0_DOMAIN);
  
- const verifiedPromise = authVerify(request.headers.authorization.replace("Bearer ", ""), env.process.AUTH0_DOMAIN);
- 
- verifiedPromise.then(userInfo => {
-  console.log(userInfo);
- }).catch(err => {
-  console.log(err);
-  });
+    verifiedPromise.then(userInfo => {
+      console.log(userInfo);
+    }).catch(err => {
+      console.log(err);
+    });
  
  ``
