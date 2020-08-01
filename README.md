@@ -13,7 +13,7 @@ This is a pretty straightforward package to use. It contains a single function w
 
     const authVerify = require('auth0-jwt-lambda');
 
-    const verifiedPromise = authVerify(request.headers.authorization.replace("Bearer ", ""), env.process.AUTH0_DOMAIN);
+    const verifiedPromise = authVerify.verify(request.headers.authorization.replace("Bearer ", ""), env.process.AUTH0_DOMAIN);
  
     verifiedPromise.then(userInfo => {
       console.log(userInfo);
