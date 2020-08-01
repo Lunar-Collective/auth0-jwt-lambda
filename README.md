@@ -10,7 +10,7 @@ This is a pretty straightforward package to use. It contains a single function w
 
 **Example**
 
-``
+
     const authVerify = require('auth0-jwt-lambda');
 
     const verifiedPromise = authVerify(request.headers.authorization.replace("Bearer ", ""), env.process.AUTH0_DOMAIN);
@@ -21,4 +21,3 @@ This is a pretty straightforward package to use. It contains a single function w
       console.log(err);
     });
  
- ``
