@@ -1,6 +1,6 @@
 {
   "name": "auth0-jwt-lambda",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Quickly integrate Auth0 into your serverless lambda function.",
   "main": "main.js",
   "scripts": {
